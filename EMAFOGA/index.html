@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal del juego Akbal, creado y distribuido por EMAFOGA GAMES Inc.">
+    <meta name="author" content="Emiliano Ayala Canul">
+    <meta property="og:image" content="imagenes/cpw.jpg" >
+    <meta property="og:description" content="Nuevo juego Akbal 2.0 para pc">
+    <meta property="og:Title" content="EMAFOGA GAMES" >
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="icon" href="imagenes/Logo-De-Empresa-Blanco.png">
+    <title>EMAFOGA GAMES</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Permanent+Marker&display=swap');
+        *{
+            scroll-behavior: smooth;
+        }
+        .iconospiedepagina{
+            width: 40px;
+            height: 40px;
+            filter: invert(100%);
+        }
+        .imagenesbotones{
+            background-color: transparent;
+            border: none;
+        }
+        .imagenesbotones img{
+            width: 100%;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .cai h5,p{
+            text-shadow: 3px 3px 2px black;
+        }
+        .cai img{
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+        .cai video{
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+        .emm img{
+            width: 90%; 
+            height: 200px;
+            border-radius: 10px;
+        }
+        .wtx{
+            color: white;
+            text-align: justify;
+        }
+        .tn
+        {
+            text-decoration: none;
+        }
+        /*color del texto principal*/
+        .tw-50
+        {
+            color: #7e8184;
+            margin-left: 15px;
+        }
+        /*color del texto que se pone al pasar el curso encima*/
+        .two-50:hover
+        {
+            color: white;
+        }
+        .contenedor img
+        {
+            width: 45%;
+            height: 40%;
+        }
+        /*fondo global*/
+        .cfc{
+            background: rgb(27,26,26);
+            background: linear-gradient(90deg, rgba(27,26,26,1) 0%, rgba(66,62,62,1) 50%, rgba(27,26,26,1) 100%);  
+            background-image: url(patron/patron.svg);      
+            background-repeat: repeat;
+        }
+        .cont img{
+            width: 100%; 
+            height: 70%;
+        }
+        /*titulos*/
+        .titulos
+        {
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 40px;
+        }
+
+        .espejo{
+            background: rgba(50, 117, 134, 0.13);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 2px solid rgba(50, 117, 134, 0.288);
+        }
+
+        @media (max-width: 750px) {
+        .imagenesbotones img{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+        }
+        ul .nav-item{
+            margin-top: 15px;
+        }
+        .cai img{
+            width: 50px;
+            height: 200px;
+        }
+        
+        .cai video{
+            width: 50px;
+            height: 200px;
+        }
+        
+        .cont{
+            margin-top: 12px;
+        }
+        .cont img
+        {
+            width: 115px; 
+            height: 20px;
+        }
+
+        .contenedor
+        {
+            margin-top: 8px;
+        }
+
+        .contenedor img
+        {
+            width: 30px;
+            height: 40%;
+        }
+        }
+    </style>
+    <div class="container-fluid fixed-top" style="background: #111111;"><!--Inicio del head 00-->
+        <div class="container-lg"><!--Inicio del principal 01-->
+            <div class="row p-3"></div><!--Inicio / Fin de columna 02-->
+            <div class="row"><!--Inicio de columna 03-->
+                <div class="col-4  col-lg-3 col-md-6"><div class="cont"><img style="margin-top: 10px;" src="imagenes/Leyenda-Nombre-Empresa-Blanco.png" alt="Imagen no encontrada"/></div></div><!--Leyenda Nombre Empresa 05-->
+                <div class="col-2  col-lg-1 col-md-2"><div class="contenedor"><img src="imagenes/Logo-De-Empresa-Blanco.png" alt="Imagen no encontrada"/></div></div><!--Logo Imagen Empresa 06-->
+                <div class="col-6  col-lg-8 col-md-4"><!--Inicio del nav 07-->
+                    <nav class="navbar navbar-expand-lg" style="margin-top: 2px;">
+                        <button style="background: #7e8184;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item" >
+                                    <a class="tn tw-50 two-50 active p-2" aria-current="page" href="#nosotrosapartado" >Nosotros</a><!--Enlace 08-->
+                                </li>
+                                <li class="nav-item" >
+                                    <a class=" tn tw-50 two-50 active p-2" aria-current="page" href="#concatoapartado">Contacto</a><!--Enlace 09-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="tn tw-50 two-50 active p-2" aria-current="page" href="#akbalgameapartado">Akbal game</a><!--Enlace 10-->
+                                </li>
+                            </ul>
+                            <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item" >
+                                    <a class="tn tw-50 two-50 active p-2" aria-current="page" href="#Descargarapartado">Descargar</a><!--Enlace 11-->
+                                </li>
+                                <li class="nav-item">
+                                <a class="tn tw-50 two-50 active p-2" aria-current="page" href="#nosotrosapartado">Inicio</a><!--Enlace 12-->
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div><!--Fin del nav 07-->
+            </div><!--Fin de columna 03-->
+            <div class="row p-3"></div><!--Inicio / Fin de columna 04-->
+        </div><!--Fin del principal 01-->
+    </div><!--Fin del head 00-->
+    <div class="container-fluid cfc p-2" id="nosotrosapartado"><!--Inicio del Body 13-->
+        <div class="container espejo" style="margin-top: 140px;"><!--Inicio contenedor espejo 14-->
+            <p class="lead p-2 text-center wtx display-6">EMAFOGA GAMES Inc.</p><!--Nombre de la empresa-->
+            <div class="row p-3"><!--Inicio encabezado 15-->
+                <div class="col-12 col-lg-6">
+                    <p class="wtx lead" style="font-weight: 700;">¿Quiénes somos?</p>
+                    <p class="h6 lead wtx">
+                        En EMAFOGA Inc, nos enorgullece ser una empresa líder 
+                        en el ámbito de desarrollo y gestión de proyectos de software. 
+                        Con un compromiso inquebrantable hacia la excelencia, hemos 
+                        estado proporcionando soluciones innovadoras y servicios de 
+                        alta calidad desde 2023.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-5 emm"><img src="imagenes/foto-quienesomos.jpg" alt="Imagen no encontrada"></div>
+            </div><!--Fin encabezado 15-->
+            <div class="row p-4"><div class="col-12"></div></div><!--espaciado18-->
+            <div class="row p-3">
+                <div class="col-12 col-lg-6">
+                    <p class="wtx lead" style="font-weight: 700;">Nuestra Misión</p>
+                    <p class="h6 lead wtx">
+                        La misión de nuestra empresa es fomentar 
+                        y preservar la cultura Maya, así como la 
+                        flora y fauna en el estado de Campeche. 
+                        Logramos esto mediante el desarrollo de un 
+                        juego educativo diseñado específicamente para 
+                        involucrar al público estudiantil. Nuestro objetivo 
+                        es inspirar un cambio positivo y duradero al promover 
+                        una mayor apreciación y conocimiento de la cultura Maya y 
+                        el medio ambiente en las generaciones futuras.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-5 emm"><img src="imagenes/foto-mision.jpg" alt="Imagen no encontrada"></div>
+            </div><!--Fin encabezado 16-->
+            <div class="row p-4"><div class="col-12"></div></div><!--espaciado19-->
+            <div class="row p-3">
+                <div class="col-12 col-lg-6">
+                    <p class="wtx lead" style="font-weight: 700;">Nuestra Visión</p>
+                    <p class="h6 lead wtx" id="akbalgameapartado">
+                        Nuestra visión como empresa es generar un impacto escalable y 
+                        duradero al fomentar a los niños con su entorno natural y las 
+                        diversas culturas que nos rodean. Buscamos que las generaciones 
+                        futuras tomen conciencia y aprecien el patrimonio cultural y la 
+                        biodiversidad de nuestro mundo.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-5 emm"><img src="imagenes/foto-vision.jpg" alt="Imagen no encontrada"></div>
+            </div><!--Fin encabezado 20-->
+            <div class="row p-3"></div>
+        </div><!--Fin contenedor espejo 14-->
+        <div class="container espejo"><!--Inicio contenedor espejo-->
+            <p class="titulos p-2 text-center wtx">AKBAL GAME</p><!--Nombre de la empresa-->
+        <div class="row">
+            <div class="col-1 col-lg-1"></div>
+            <div class="col-10 col-lg-8"><!--inicio de carousel-->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active cai">
+                        <img src="imagenes/ak-1.jpg" class="d-block w-100" alt="Imagen no encontrada">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Descubre tu entorno</h5>
+                          <p>Animate a descubrir este diverso mapa y todo lo que esconde en el.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item cai">
+                        <img src="imagenes/ak-2.jpg" class="d-block w-100" alt="Imagen no encontrada">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Prueba tus habilidades</h5>
+                          <p>Demuestra tus capacidades y pasa los desafios que este juego tiene para ti.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item cai">
+                        <img src="imagenes/ak-3.jpg" class="d-block w-100" alt="imagen no econtrada">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Aprende mientras te diviertes</h5>
+                          <p>Llenate de conocimiento mientras pasas horas de diversion en este juego.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item cai">
+                        <video src="imagenes/video.mp4" class="d-block w-100" alt="videno no encontrado" controls></video>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    </div>
+                  <!--
+                    botones
+                  <div>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">picale</button> boton anterior
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">picale</button> boton siguiente
+                    usar una imagen como boton<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="imagenes/ak-1.jpg" width="50px" height="50px" alt=""></button>
+                  </div>
+                  -->
+                  <div class="row p-2"></div>
+                  <div class="row p-2">
+                    <div class="col-12 col-lg-2"></div>
+                    <!--Inicio de botones imagenes-->
+                    <div class="col-3 col-lg-2" id="Descargarapartado">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active imagenesbotones" aria-current="true" aria-label="Slide 1">
+                            <img src="imagenes/ak-1.jpg" alt="No se encontro imagen">
+                        </button>     
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <button class="imagenesbotones" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+                            <img src="imagenes/ak-2.jpg" alt="No se encontro imagen">
+                        </button>
+                    </div>   
+                    <div class="col-3 col-lg-2">
+                        <button class="imagenesbotones" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+                            <img src="imagenes/ak-3.jpg" alt="No se encontro imagen">
+                        </button>
+                    </div>      
+                    <div class="col-3 col-lg-2">
+                        <button class="imagenesbotones" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
+                            <img src="imagenes/videofoto.jpg" alt="No se encontro imagen">
+                        </button>
+                    </div>   
+                    <!--Fin de botones imagenes-->
+                    <div class="col-12 col-lg-2">
+                    </div>
+                  </div>
+            </div><!--Fin de carousel-->
+        </div>
+            <div class="col-12 col-lg-3">
+                <p class="lead text-center wtx display-6">Sinopsis</p>
+                <p class="wtx p-3" style="text-shadow: none;">
+                    Embárcate en un fascinante viaje junto a Ak'bal, 
+                    un intrépido niño maya, que se sumerge en una emocionante 
+                    odisea educativa a través de la exuberante selva. A lo largo 
+                    de esta aventura, Ak'bal desvelará los misterios de las 
+                    plantas medicinales y tóxicas, explorará la riqueza 
+                    cultural de los mayas y se sumergirá en el conocimiento 
+                    de la variada flora que habita la región. En este relato 
+                    cautivador, la curiosidad de Ak'bal lo llevará a descubrir 
+                    secretos ancestrales y a conectarse con la asombrosa 
+                    biodiversidad que rodea su mundo, ofreciendo una 
+                    experiencia única llena de aprendizaje y emoción.
+                </p>
+            </div>
+        </div>
+        <div class="row p-3"></div><!--salto de linea-->
+    </div><!--Fin contenedor espejo-->
+    <div class="container espejo" id="descargarapartado"><!--Inicio contenedor espejo-->
+        <div class="row p-3"></div><!--salto-->
+        <div class="row"><p class="lead wtx display-6 text-center">REQUERIMIENTOS</p></div>
+        <div class="row">
+            <div class="col-12 col-lg-1"></div><!--salto lateral izquierdo-->
+            <div class="col-12 col-lg-5 p-5"><!--requermientos minimos-->
+                <p class="lead wtx h6 text-center">MINIMOS</p>
+                <p class="p-2"></p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * SO: Windows 8.1 de 64 bits, Windows 8 de 64 bits, Windows 7 de 64 bits con Service Pack 1.
+                </p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * Procesador: Intel Core 2 Quad CPU Q6600 de 2.4 GHz (4 CPU)/AMD Phenom 9850 Quad-Core (4 CPU) de 2.5 GHz.
+                </p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * Memoria: 4 GB de RAM
+                </p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * Almacenamiento: 5GB de espacio disponible 
+                </p>     
+            </div>
+            <div class="col-12 col-lg-5 p-5"><!--requermientos recomendados-->
+                <p class="lead wtx h6 text-center">RECOMENDADOS</p>
+                <p class="p-2"></p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * SO: Windows 11 de 64 bits, Windows 10 de 64 bits, Windows 8.1 de 64 bits, Windows 8 de 64 bits.
+                </p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * Procesador: Intel Core i5 3470 de 3.2 GHz (4 CPU)/AMD X8 FX-8350 a 4 GHz (8 CPU)
+                </p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * Memoria: 8 GB de RAM
+                </p>
+                <p style="color: white; font-size: 18px; text-align: justify;">
+                    * Almacenamiento: 10 GB de espacio disponible 
+                </p> 
+            </div>
+            <div class="col-12 col-lg-1"></div><!--salto lateral derecho-->
+        </div>
+        <div class="row p-3"></div><!--salto-->
+        <div class="row"><p class="wtx titulos text-center">DESCARGA AKBAL GAME</p></div>
+        <div class="row p-3"></div><!--salto-->
+        <div class="row">
+            <div class="col-12 col-lg-1"></div>
+            <div class="col-12 col-lg-4 text-center" >
+                <img src="imagenes/logojuego.png" alt="Imagen no encontrada" width="80%" height="200px" style="border-radius: 10px;">
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="row" style="margin-top: 80px;"></div>
+                <a href="https://mega.nz/file/Ax0WmDyZ#F-J_Vefwet8of5uMXnIHEqo8BB9cAWf_SKeHMIboXTk" class="lead display-6" target="_blank" style="text-shadow: 1px 1px 5px rgb(144, 13, 4); 
+                 color: white; text-decoration: none;">
+                   Clik para descarga con Mega
+                </a>
+            </div>
+        </div>
+        <div class="row p-3"></div><!--salto-->
+    </div><!--Fin contenedor espejo-->
+    <div class="row p-3"></div><!--salto-->
+    </div><!--Fin del Body 13-->
+    <footer>
+        <div class="container-fluid" style="background: #1e1e1e;" id="concatoapartado">
+            <div class="container">
+                <div class="row p-3"></div><!--salto-->
+                <div class="row"><!--footer-->
+                    <div class="col-2 text-center"><a href="#"><i><img src="svg/facebook.svg"    alt="Imagen no encontrada" class="iconospiedepagina"></i></a></div>
+                    <div class="col-2 text-center"><a href="#"><i><img src="svg/instagram.svg"   alt="Imagen no encontrada" class="iconospiedepagina"></i></a></div>
+                    <div class="col-2 text-center"><a href="#"><i><img src="svg/twitter.svg"     alt="Imagen no encontrada" class="iconospiedepagina"></i></a></div>
+                    <div class="col-2 text-center"><a href="#"><i><img src="svg/tiktok.svg"      alt="Imagen no encontrada" class="iconospiedepagina"></i></a></div>
+                    <div class="col-2 text-center"><a href="#"><i><img src="svg/youtube.svg"     alt="Imagen no encontrada" class="iconospiedepagina"></i></a></div>
+                    <div class="col-2 text-center"><a href="#"><i><img src="svg/phone-solid.svg" alt="Imagen no encontrada" class="iconospiedepagina"></i></a></div>
+                </div>
+                <div class="row p-3"></div><!--salto-->
+                <div class="row">
+                    <p class="lead wtx text-center">
+                        © 2023, EMAFOGA Games, Inc. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="row p-3"></div><!--salto-->
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
